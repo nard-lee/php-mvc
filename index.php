@@ -46,10 +46,10 @@ Router::post("/login", function(){
         $handle = handleErrors($body);
 
         $mysql->create("book_table", " '$_id', '$username', '$cnumber' ");
-        setcookie("isUser", $_id, time() + (86400 * 30));
-        response::session("isUser", $_id);
+        //setcookie("isUser", $_id, time() + (86400 * 30));
+        //response::session("isUser", $_id);
         //$_SESSION["isUser"] = $_id;
-        response::json(["success"=> $_id]);
+        //response::json(["success"=> $_id]);
 
     } catch(Exception $err) {
         response::json(["error"=> $err->getMessage()]);
