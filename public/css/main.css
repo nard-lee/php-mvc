@@ -1,0 +1,160 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    background: #000;
+    scroll-behavior: smooth;
+}
+
+.collapse-btn {
+    display: none;
+}
+.collapse-close {
+    display: none;
+}
+
+.logo {
+    font-family: 'Fredoka One', cursive;
+}
+
+.land-text h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.land-text h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+}
+
+.land-text {
+    margin-top: 10rem;
+}
+
+.scroll-down {
+    background-color: #0099e6;
+    padding: 10px;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.scroll-down:hover {
+    transition: 200ms;
+    box-shadow: 0px 0px 10px 10px #1a1a1a;
+}
+
+.table-menu {
+    padding-top: 3rem;
+    background: url(../cup3.jpg);
+    background-size: 100%;
+    background-clip: content-box;
+    padding-left: 0;
+    background-attachment: fixed;
+}
+
+.table-menu h1 {
+    font-size: 2rem;
+}
+
+.scroll-sect {
+    color: #1a1a1a;
+    font-size: 1.2rem;
+}
+
+.scroll-text {
+    transition: 200ms;
+    opacity: 0;
+}
+
+.mymenu {
+    background: url(../cup3.jpg);
+    background-size: 100%;
+    padding: 2rem;
+    padding-left: 0;
+    background-attachment: fixed;
+}
+
+.coffee-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem
+}
+
+.coffee-item {
+    background: #0d0d0d;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.coffee-pic img {
+    width: 20rem;
+}
+
+.order-form input {
+    background: #000;
+    padding: 10px;
+    width: 10rem;
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1087px) {
+    .smcoffee {
+        display: none;
+    }
+    .land-sect {
+        padding-bottom: 2.5rem;
+        background: url(../cup3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    .scroll-sect,
+    .land-sect {
+        justify-content: center;
+        text-align: center;
+    }
+    .scroll-text {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .collapse-btn {
+        display: block;
+    }
+    .collapse-close {
+        display: block;
+    }
+    .nav-bar {
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: -100rem;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        padding: 1.5rem;
+        transition: 200ms;
+    }
+
+    .nav-bar a {
+        font-size: 1.4rem;
+    }
+
+    .collapse-navbar {
+        top: 0;
+    }
+}
