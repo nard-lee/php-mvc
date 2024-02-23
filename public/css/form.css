@@ -1,0 +1,116 @@
+/* Container styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background: #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+.con-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Form container styles */
+.con-form {
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Title styles */
+.con-form h2 {
+    font-size: 28px;
+    color: #333333;
+}
+
+/* User type styles */
+.user-type {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-type h3 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Toggle switch styles */
+.toggle-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toggle-switch input[type="radio"] {
+    display: none;
+}
+
+.toggle-switch label {
+    display: inline-block;
+    cursor: pointer;
+    color: #333;
+    padding: 8px 15px;
+    transition: color 0.3s;
+    width: 3rem;
+}
+
+.toggle-switch label:hover {
+    color: #333333;
+}
+
+.toggle-switch input[type="radio"]:checked+label {
+    border: 1px solid #0059b3;
+    color:  #0059b3;
+    box-shadow: 0px 0px 14px 0px #b3b3b3;
+}
+
+.toggle-switch input[type="radio"]+label {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.toggle-switch input[type="radio"]:first-child+label {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.toggle-switch input[type="radio"]:last-child+label {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-div button {
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    background: #0059b3;
+    border: 1px solid #0059b3;
+    border-radius: 5px;
+
+}
+.form-div button a {
+    color: #333;
+    color: #fff;
+}

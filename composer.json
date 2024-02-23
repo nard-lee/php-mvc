@@ -1,0 +1,11 @@
+{
+    "name": "admin/codeholic",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {
+        "illuminate/view": "^10.43"
+    }
+}
